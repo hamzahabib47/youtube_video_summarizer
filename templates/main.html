@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}FlashNote{% endblock %}
+
+{% block header %}Youtube Video Summary{% endblock %}
+
+{% block content %}
+    {% if error %}
+        <div class="alert alert-danger">{{ error }}</div>
+    {% endif %}
+    {% if summary %}
+        <div class="output-box">{{ summary|safe }}</div>
+    {% endif %}
+    <div class="text-center mt-4">
+        <a href="/" class="btn btn-custom w-100">Go to Prompt Page</a>
+    </div>
+{% endblock %}

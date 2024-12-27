@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}FlashNote{% endblock %}
+
+{% block header %}Custom Prompt Page{% endblock %}
+
+{% block content %}
+    <form id="input-form" method="POST" action="/process">
+        <div class="mb-3">
+            <label for="youtube_link" class="form-label">YouTube Link</label>
+            <input type="url" class="form-control" id="youtube_link" name="youtube_link" placeholder="Enter YouTube link" required>
+        </div>
+        <div class="mb-3">
+            <label for="user_prompt" class="form-label">Custom Prompt (optional)</label>
+            <textarea class="form-control" id="user_prompt" name="user_prompt" rows="5" placeholder="Write your custom prompt here..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-custom w-100" id="submit-btn">
+            <span id="button-text">Generate</span>
+            <span class="loader d-none" id="loader"></span>
+        </button>
+    </form>
+    <div id="output" class="output-box d-none"></div>
+{% endblock %}

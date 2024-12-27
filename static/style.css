@@ -1,0 +1,57 @@
+body {
+    background-color: #1c1c1e;
+    color: #ffffff;
+}
+
+h1 {
+    color: #ff9800;
+}
+
+.btn-custom {
+    background-color: #ff9800;
+    color: black;
+}
+
+.btn-custom:hover {
+    background-color: #e68900;
+    color: black;
+}
+
+.output-box {
+    background-color: #3e3e3e;
+    color: #ffffff;
+    border: 1px solid #ff9800;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.loader {
+    border: 2px solid transparent;
+    border-top: 2px solid white;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.d-none {
+    display: none !important;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+    margin-top: 1.5rem !important;
+}
